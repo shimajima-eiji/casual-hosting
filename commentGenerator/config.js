@@ -11,7 +11,7 @@ window.appConfig = {
   // AI設定（開発者のみ変更）
   ai: {
     // 使用するAIプロバイダー: "openai", "claude", "gemini" または "mock"
-    provider: 'openai',
+    provider: 'mock',
 
     // OpenAI設定
     openai: {
@@ -36,8 +36,8 @@ window.appConfig = {
     gemini: {
       apiKey: '', // Google AI Studio APIキーを設定
       endpoint:
-        'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent',
-      model: 'gemini-pro',
+        'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent', // 正しいエンドポイントとモデル名に変更,
+      model: 'gemini-1.5-flash',
       temperature: 0.7,
       maxTokens: 300
     }
