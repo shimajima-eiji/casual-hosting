@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>なんちゃってクッキークリッカーゲームのベースみたいなもの</h1>
+    <table>
+        <tr>
+            <th><label for="time">時間</label></th>
+            <th>:</th>
+            <td><span id="year">1</span>年 <span id="month">1</span>月 <span id="day">1</span>日</td>
+        </tr>
+
+        <tr>
+            <th><label for="cookie">クッキー</label></th>
+            <th>:</th>
+            <td><span id="cookie">0</span></td>
+        </tr>
+
+        <tr>
+            <th><label for="people">人材</label></th>
+            <th>:</th>
+            <td><span id="people">0</span></td>
+        </tr>
+
+    </table>
+    <p>
+        メッセージ<br />
+        <textarea id="message" disabled placeholder="ゲーム開始後はここにイベントログが表示されます"></textarea>
+    </p>
+    <table>
+        <tr>
+            <td><button id="add_cookie" disabled>クッキー</button></td>
+            <td><button id="add_people" disabled>人を雇う</button></td>
+            <td><button id="add_10people" disabled>10人雇う</button></td>
+        </tr>
+
+        <tr>
+            <td><button id="start">開始</button></td>
+            <td><button id="stop">｜｜</button></td>
+            <td><button id="boost">＞＞シャア専用</button></td>
+        </tr>
+    </table>
+    <p>
+        <button id="debug">デバッグ</button>
+    </p>
+    <footer>
+        <a
+            href="https://github.com/shimajima-eiji/Hosting2/tree/main/%E3%82%AF%E3%83%83%E3%82%AD%E3%83%BC%E3%82%AF%E3%83%AA%E3%83%83%E3%82%AB%E3%83%BC%E3%83%99%E3%83%BC%E3%82%B9">ソースコード</a>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
